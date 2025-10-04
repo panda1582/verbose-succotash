@@ -276,32 +276,88 @@
      style="display:inline-block; background:#ffcc00; color:#000; padding:12px 25px; border-radius:6px; font-size:18px; font-weight:bold; text-decoration:none; position:relative; z-index:9999;">
      📞 647-990-5487
   </a>
-</section>
 <!-- ✅ Booking Section (Cal.com) -->
-  <section class="booking-section" id="book">
-    <h2>Book Your Appointment</h2>
-    <p class="sub">Choose a service and time. Durations shown below.</p>
-    <div class="booking-grid">
-      <a class="booking-btn" href="https://cal.com/abrubyarezoo/brow-lamination" target="_blank" rel="noopener">
-        Brow Lamination <span class="booking-duration">60 min</span>
-      </a>
-      <a class="booking-btn" href="https://cal.com/abrubyarezoo/lash-lift-tint" target="_blank" rel="noopener">
-        Lash Lift &amp; Tint <span class="booking-duration">60 min</span>
-      </a>
-      <a class="booking-btn" href="https://cal.com/abrubyarezoo/lash-extensions" target="_blank" rel="noopener">
-        Lash Extensions <span class="booking-duration">120 min</span>
-      </a>
-      <a class="booking-btn" href="https://cal.com/abrubyarezoo/eyeliner" target="_blank" rel="noopener">
-        Eyeliner <span class="booking-duration">150 min</span>
-      </a>
-      <a class="booking-btn" href="https://cal.com/abrubyarezoo/eyebrow-microblading-powder-brows" target="_blank" rel="noopener">
-        Eyebrow Microblading / Powder Brows <span class="booking-duration">120 min</span>
-      </a>
-      <a class="booking-btn" href="https://cal.com/abrubyarezoo/lip-blushing" target="_blank" rel="noopener">
-        Lip Blushing <span class="booking-duration">180 min</span>
-      </a>
-    </div>
-  </section>
+<style>
+  /* Booking Section */
+  .booking-section {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .booking-section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+
+  .booking-section p.sub {
+    opacity: .85;
+    margin: 0 0 24px;
+    font-size: 14px;
+  }
+
+  .booking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .booking-btn {
+    display: block;
+    padding: 18px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ffcc00, #d4a017);
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  }
+
+  .booking-btn:hover {
+    background: linear-gradient(135deg, #ffd633, #e6b800);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
+  }
+
+  .booking-duration {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 5px;
+    color: #222;
+  }
+</style>
+
+<section class="booking-section" id="book">
+  <h2>Book Your Appointment</h2>
+  <p class="sub">Choose a service and time. Durations shown below.</p>
+  <div class="booking-grid">
+    <a class="booking-btn" href="https://cal.com/abrubyarezoo/brow-lamination" target="_blank" rel="noopener">
+      Brow Lamination <span class="booking-duration">60 min</span>
+    </a>
+    <a class="booking-btn" href="https://cal.com/abrubyarezoo/lash-lift-tint" target="_blank" rel="noopener">
+      Lash Lift &amp; Tint <span class="booking-duration">60 min</span>
+    </a>
+    <a class="booking-btn" href="https://cal.com/abrubyarezoo/lash-extensions" target="_blank" rel="noopener">
+      Lash Extensions <span class="booking-duration">120 min</span>
+    </a>
+    <a class="booking-btn" href="https://cal.com/abrubyarezoo/eyeliner" target="_blank" rel="noopener">
+      Eyeliner <span class="booking-duration">150 min</span>
+    </a>
+    <a class="booking-btn" href="https://cal.com/abrubyarezoo/eyebrow-microblading-powder-brows" target="_blank" rel="noopener">
+      Eyebrow Microblading / Powder Brows <span class="booking-duration">120 min</span>
+    </a>
+    <a class="booking-btn" href="https://cal.com/abrubyarezoo/lip-blushing" target="_blank" rel="noopener">
+      Lip Blushing <span class="booking-duration">180 min</span>
+    </a>
+  </div>
+</section>
 
   <!-- Toggles -->
   <script>
