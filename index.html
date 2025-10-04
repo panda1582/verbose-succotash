@@ -24,6 +24,11 @@
     rel="stylesheet" type="text/css">
 
   <style>
+    /* Force normal cursor everywhere */
+        body, a, button, input, textarea {
+          cursor: auto !important;
+        }
+    
     /* Center service text */
     .center-text {
       position: absolute;
@@ -120,24 +125,6 @@
       }
     }
 
-    /* Fancy cursor */
-    #cursor {
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 10000;
-    }
-
-    #cursor circle {
-      stroke: white;
-      stroke-width: 2;
-    }
-
-    #cursor line {
-      stroke: white;
-      stroke-width: 2;
-    }
 
     /* Gallery Section */
     .gallery {
