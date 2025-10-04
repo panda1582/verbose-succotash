@@ -276,7 +276,6 @@
      style="display:inline-block; background:#ffcc00; color:#000; padding:12px 25px; border-radius:6px; font-size:18px; font-weight:bold; text-decoration:none; position:relative; z-index:9999;">
      📞 647-990-5487
   </a>
-<!-- ✅ Booking Section (Cal.com) -->
 <style>
   /* Booking Section */
   .booking-section {
@@ -287,32 +286,58 @@
   }
 
   .booking-section h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
     font-weight: 800;
   }
 
   .booking-section p.sub {
     opacity: .85;
-    margin: 0 0 24px;
-    font-size: 14px;
+    margin: 0 0 30px;
+    font-size: 15px;
   }
 
   .booking-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
     margin: auto;
   }
 
-  .booking-btn {
+  .booking-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+    transition: transform .3s ease;
+  }
+
+  .booking-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .booking-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 8px;
+  }
+
+  .booking-duration {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 15px;
     display: block;
-    padding: 18px;
-    border-radius: 8px;
+  }
+
+  .booking-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
     background: linear-gradient(135deg, #ffcc00, #d4a017);
     color: #000;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
@@ -321,43 +346,89 @@
 
   .booking-btn:hover {
     background: linear-gradient(135deg, #ffd633, #e6b800);
-    transform: translateY(-3px) scale(1.02);
+    transform: translateY(-2px);
     box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
   }
 
-  .booking-duration {
-    display: block;
-    font-size: 13px;
-    font-weight: normal;
-    margin-top: 5px;
-    color: #222;
+  /* Embedded iframe styling */
+  .booking-frame {
+    margin-top: 20px;
+    display: none;
+    width: 100%;
+    height: 700px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
   }
 </style>
 
 <section class="booking-section" id="book">
   <h2>Book Your Appointment</h2>
-  <p class="sub">Choose a service and time. Durations shown below.</p>
+  <p class="sub">Choose your service and reserve a time directly below.</p>
+
   <div class="booking-grid">
-    <a class="booking-btn" href="https://cal.com/abrubyarezoo/brow-lamination" target="_blank" rel="noopener">
-      Brow Lamination <span class="booking-duration">60 min</span>
-    </a>
-    <a class="booking-btn" href="https://cal.com/abrubyarezoo/lash-lift-tint" target="_blank" rel="noopener">
-      Lash Lift &amp; Tint <span class="booking-duration">60 min</span>
-    </a>
-    <a class="booking-btn" href="https://cal.com/abrubyarezoo/lash-extensions" target="_blank" rel="noopener">
-      Lash Extensions <span class="booking-duration">120 min</span>
-    </a>
-    <a class="booking-btn" href="https://cal.com/abrubyarezoo/eyeliner" target="_blank" rel="noopener">
-      Eyeliner <span class="booking-duration">150 min</span>
-    </a>
-    <a class="booking-btn" href="https://cal.com/abrubyarezoo/eyebrow-microblading-powder-brows" target="_blank" rel="noopener">
-      Eyebrow Microblading / Powder Brows <span class="booking-duration">120 min</span>
-    </a>
-    <a class="booking-btn" href="https://cal.com/abrubyarezoo/lip-blushing" target="_blank" rel="noopener">
-      Lip Blushing <span class="booking-duration">180 min</span>
-    </a>
+    <!-- Brow Lamination -->
+    <div class="booking-card">
+      <div class="booking-title">Brow Lamination</div>
+      <span class="booking-duration">60 min</span>
+      <a href="#" class="booking-btn" onclick="toggleBooking('frame1'); return false;">Book Now</a>
+      <iframe id="frame1" class="booking-frame" src="https://cal.com/abrubyarezoo/brow-lamination"
+        allow="camera; microphone; fullscreen; payment"></iframe>
+    </div>
+
+    <!-- Lash Lift & Tint -->
+    <div class="booking-card">
+      <div class="booking-title">Lash Lift & Tint</div>
+      <span class="booking-duration">60 min</span>
+      <a href="#" class="booking-btn" onclick="toggleBooking('frame2'); return false;">Book Now</a>
+      <iframe id="frame2" class="booking-frame" src="https://cal.com/abrubyarezoo/lash-lift-tint"
+        allow="camera; microphone; fullscreen; payment"></iframe>
+    </div>
+
+    <!-- Lash Extensions -->
+    <div class="booking-card">
+      <div class="booking-title">Lash Extensions</div>
+      <span class="booking-duration">120 min</span>
+      <a href="#" class="booking-btn" onclick="toggleBooking('frame3'); return false;">Book Now</a>
+      <iframe id="frame3" class="booking-frame" src="https://cal.com/abrubyarezoo/lash-extensions"
+        allow="camera; microphone; fullscreen; payment"></iframe>
+    </div>
+
+    <!-- Eyeliner -->
+    <div class="booking-card">
+      <div class="booking-title">Eyeliner</div>
+      <span class="booking-duration">150 min</span>
+      <a href="#" class="booking-btn" onclick="toggleBooking('frame4'); return false;">Book Now</a>
+      <iframe id="frame4" class="booking-frame" src="https://cal.com/abrubyarezoo/eyeliner"
+        allow="camera; microphone; fullscreen; payment"></iframe>
+    </div>
+
+    <!-- Eyebrow Microblading / Powder Brows -->
+    <div class="booking-card">
+      <div class="booking-title">Eyebrow Microblading / Powder Brows</div>
+      <span class="booking-duration">120 min</span>
+      <a href="#" class="booking-btn" onclick="toggleBooking('frame5'); return false;">Book Now</a>
+      <iframe id="frame5" class="booking-frame" src="https://cal.com/abrubyarezoo/eyebrow-microblading-powder-brows"
+        allow="camera; microphone; fullscreen; payment"></iframe>
+    </div>
+
+    <!-- Lip Blushing -->
+    <div class="booking-card">
+      <div class="booking-title">Lip Blushing</div>
+      <span class="booking-duration">180 min</span>
+      <a href="#" class="booking-btn" onclick="toggleBooking('frame6'); return false;">Book Now</a>
+      <iframe id="frame6" class="booking-frame" src="https://cal.com/abrubyarezoo/lip-blushing"
+        allow="camera; microphone; fullscreen; payment"></iframe>
+    </div>
   </div>
 </section>
+
+<script>
+  function toggleBooking(id) {
+    const frame = document.getElementById(id);
+    frame.style.display = (frame.style.display === "block") ? "none" : "block";
+  }
+</script>
 
   <!-- Toggles -->
   <script>
