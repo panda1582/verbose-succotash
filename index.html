@@ -28,7 +28,15 @@
         body, a, button, input, textarea {
           cursor: auto !important;
         }
-
+                  html, body, * {
+            cursor: auto !important;
+          }
+          
+                  
+          .video-overlay {
+            pointer-events: none !important; /* Prevent overlay from blocking */
+            display: none !important;        /* Or just hide it completely */
+          }
           .video-overlay {
         pointer-events: none !important;
         cursor: auto !important;
