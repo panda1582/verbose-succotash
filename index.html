@@ -279,22 +279,31 @@
      📞 647-990-5487
   </a>
 </section>
-
-  <!-- Fancy Cursor -->
-  <svg id="cursor" width="20" height="20">
-    <circle r="7" cx="10" cy="10" fill="none"></circle>
-    <line x1="0" y1="0" x2="20" y2="20"></line>
-    <line x1="0" y1="20" x2="20" y2="0"></line>
-  </svg>
-
-  <!-- Cursor script -->
-  <script>
-    const cursor = document.getElementById("cursor");
-    window.addEventListener("mousemove", e => {
-      cursor.style.top = (e.clientY - 10) + "px";
-      cursor.style.left = (e.clientX - 10) + "px";
-    });
-  </script>
+<!-- ✅ Booking Section (Cal.com) -->
+  <section class="booking-section" id="book">
+    <h2>Book Your Appointment</h2>
+    <p class="sub">Choose a service and time. Durations shown below.</p>
+    <div class="booking-grid">
+      <a class="booking-btn" href="https://cal.com/abrubyarezoo/brow-lamination" target="_blank" rel="noopener">
+        Brow Lamination <span class="booking-duration">60 min</span>
+      </a>
+      <a class="booking-btn" href="https://cal.com/abrubyarezoo/lash-lift-tint" target="_blank" rel="noopener">
+        Lash Lift &amp; Tint <span class="booking-duration">60 min</span>
+      </a>
+      <a class="booking-btn" href="https://cal.com/abrubyarezoo/lash-extensions" target="_blank" rel="noopener">
+        Lash Extensions <span class="booking-duration">120 min</span>
+      </a>
+      <a class="booking-btn" href="https://cal.com/abrubyarezoo/eyeliner" target="_blank" rel="noopener">
+        Eyeliner <span class="booking-duration">150 min</span>
+      </a>
+      <a class="booking-btn" href="https://cal.com/abrubyarezoo/eyebrow-microblading-powder-brows" target="_blank" rel="noopener">
+        Eyebrow Microblading / Powder Brows <span class="booking-duration">120 min</span>
+      </a>
+      <a class="booking-btn" href="https://cal.com/abrubyarezoo/lip-blushing" target="_blank" rel="noopener">
+        Lip Blushing <span class="booking-duration">180 min</span>
+      </a>
+    </div>
+  </section>
 
   <!-- Toggles -->
   <script>
