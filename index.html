@@ -445,5 +445,27 @@
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
 
+
+  <script>
+  // Disable right click
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert("Right click is disabled on this site.");
+  });
+
+  // Disable common inspect shortcuts
+  document.addEventListener('keydown', function(e) {
+    if (
+      e.key === "F12" || // F12
+      (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "C" || e.key === "J")) || // Ctrl+Shift+I/C/J
+      (e.ctrlKey && e.key === "U") // Ctrl+U
+    ) {
+      e.preventDefault();
+      alert("Inspect shortcut is disabled on this site.");
+    }
+  });
+</script>
+
+  
 </body>
 </html>
