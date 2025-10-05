@@ -63,38 +63,44 @@
     }
 
     /* Locations & Facebook floating box */
-    .locations-wrapper {
-      position: fixed;
-      top: 15px;
-      left: 15px;
-      z-index: 9999;
-      max-width: 280px;
-      font-family: Arial, sans-serif;
-    }
-
-    .locations-toggle {
-      width: 100%;
-      padding: 10px 15px;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      background: #222;
-      color: #fff;
-      cursor: pointer;
-      margin-bottom: 5px;
-    }
-
-    .locations-content {
-      display: none;
-      margin-bottom: 10px;
-      padding: 10px;
+/* Footer Locations Box */
+    .footer {
       background: #111;
       color: #fff;
-      border: 1px solid #333;
-      border-radius: 6px;
-      font-size: 14px;
+      padding: 40px 20px;
+      text-align: center;
     }
+    
+    .locations-wrapper {
+      position: relative;   /* not fixed */
+      max-width: 600px;
+      margin: auto;
+    }
+
+
+.locations-toggle {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.locations-content {
+  display: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 14px;
+}
 
     .locations-content iframe {
       border-radius: 6px;
